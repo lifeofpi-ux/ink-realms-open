@@ -1,0 +1,26 @@
+{
+  "name": "ink-brawls-realms",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "INK BRAWLS REALMS(잉크 브로울스 왕국전) — 교실용 팀 전략 · 난투 게임. 잉크 풍선으로 싸우고 일꾼 · 잉크봇 · 몬스터를 부려 보석을 깃발의 탑으로 가져와요(three.js 2.5D · Node · WebSocket)",
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c magenta,cyan \"node --watch server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@fontsource/black-han-sans": "^5.3.0",
+    "three": "^0.184.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
